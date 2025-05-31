@@ -1,0 +1,42 @@
+---------- Training Student -------
+epoch 0/20
+{"metric": "resnet8_val_accuracy", "value": 7.95}
+epoch 1/20
+{"metric": "resnet8_val_accuracy", "value": 11.31}
+epoch 2/20
+{"metric": "resnet8_val_accuracy", "value": 14.48}
+epoch 3/20
+{"metric": "resnet8_val_accuracy", "value": 16.42}
+epoch 4/20
+{"metric": "resnet8_val_accuracy", "value": 19.58}
+epoch 5/20
+{"metric": "resnet8_val_accuracy", "value": 22.87}
+epoch 6/20
+{"metric": "resnet8_val_accuracy", "value": 25.25}
+epoch 7/20
+{"metric": "resnet8_val_accuracy", "value": 26.21}
+epoch 8/20
+{"metric": "resnet8_val_accuracy", "value": 29.45}
+epoch 9/20
+{"metric": "resnet8_val_accuracy", "value": 30.38}
+epoch 10/20
+{"metric": "resnet8_val_accuracy", "value": 31.25}
+epoch 11/20
+{"metric": "resnet8_val_accuracy", "value": 31.05}
+epoch 12/20
+{"metric": "resnet8_val_accuracy", "value": 33.78}
+epoch 13/20
+{"metric": "resnet8_val_accuracy", "value": 36.31}
+epoch 14/20
+{"metric": "resnet8_val_accuracy", "value": 36.09}
+epoch 15/20
+{"metric": "resnet8_val_accuracy", "value": 40.37}
+epoch 16/20
+{"metric": "resnet8_val_accuracy", "value": 40.63}
+epoch 17/20
+{"metric": "resnet8_val_accuracy", "value": 40.95}
+epoch 18/20
+{"metric": "resnet8_val_accuracy", "value": 40.84}
+epoch 19/20
+{"metric": "resnet8_val_accuracy", "value": 40.88}
+[2025-05-31 14:17:49] INFO (nni/MainThread) Final result: 40.95

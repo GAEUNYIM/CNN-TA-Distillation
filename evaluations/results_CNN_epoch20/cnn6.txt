@@ -1,0 +1,87 @@
+---------- Training Student -------
+epoch 0/20
+{"metric": "plane8_val_accuracy", "value": 14.94}
+epoch 1/20
+{"metric": "plane8_val_accuracy", "value": 31.66}
+epoch 2/20
+{"metric": "plane8_val_accuracy", "value": 36.37}
+epoch 3/20
+{"metric": "plane8_val_accuracy", "value": 39.61}
+epoch 4/20
+{"metric": "plane8_val_accuracy", "value": 46.38}
+epoch 5/20
+{"metric": "plane8_val_accuracy", "value": 46.3}
+epoch 6/20
+{"metric": "plane8_val_accuracy", "value": 44.27}
+epoch 7/20
+{"metric": "plane8_val_accuracy", "value": 47.27}
+epoch 8/20
+{"metric": "plane8_val_accuracy", "value": 47.8}
+epoch 9/20
+{"metric": "plane8_val_accuracy", "value": 47.97}
+epoch 10/20
+{"metric": "plane8_val_accuracy", "value": 49.59}
+epoch 11/20
+{"metric": "plane8_val_accuracy", "value": 49.15}
+epoch 12/20
+{"metric": "plane8_val_accuracy", "value": 49.8}
+epoch 13/20
+{"metric": "plane8_val_accuracy", "value": 48.11}
+epoch 14/20
+{"metric": "plane8_val_accuracy", "value": 50.54}
+epoch 15/20
+{"metric": "plane8_val_accuracy", "value": 50.8}
+epoch 16/20
+{"metric": "plane8_val_accuracy", "value": 52.75}
+epoch 17/20
+{"metric": "plane8_val_accuracy", "value": 54.09}
+epoch 18/20
+{"metric": "plane8_val_accuracy", "value": 54.88}
+epoch 19/20
+{"metric": "plane8_val_accuracy", "value": 55.02}
+[2025-05-31 13:49:38] INFO (nni/MainThread) Final result: 55.02
+Namespace(epochs=20, dataset='cifar100', batch_size=128, learning_rate=0.1, momentum=0.9, weight_decay=0.0001, teacher='', student='plane6', teacher_checkpoint='', cuda=True, dataset_dir='./data')
+/home/gaeunyim/GAEUN/lib/python3.10/site-packages/nni/runtime/platform/standalone.py:32: RuntimeWarning: Running NNI code without runtime. Check the following tutorial if you are new to NNI: https://nni.readthedocs.io/en/stable/Tutorial/QuickStart.html#id1
+  warnings.warn(warning_message, RuntimeWarning)
+---------- Training Student -------
+epoch 0/20
+{"metric": "plane6_val_accuracy", "value": 33.39}
+epoch 1/20
+{"metric": "plane6_val_accuracy", "value": 43.76}
+epoch 2/20
+{"metric": "plane6_val_accuracy", "value": 45.39}
+epoch 3/20
+{"metric": "plane6_val_accuracy", "value": 49.86}
+epoch 4/20
+{"metric": "plane6_val_accuracy", "value": 49.13}
+epoch 5/20
+{"metric": "plane6_val_accuracy", "value": 51.16}
+epoch 6/20
+{"metric": "plane6_val_accuracy", "value": 48.9}
+epoch 7/20
+{"metric": "plane6_val_accuracy", "value": 50.35}
+epoch 8/20
+{"metric": "plane6_val_accuracy", "value": 52.57}
+epoch 9/20
+{"metric": "plane6_val_accuracy", "value": 52.9}
+epoch 10/20
+{"metric": "plane6_val_accuracy", "value": 54.58}
+epoch 11/20
+{"metric": "plane6_val_accuracy", "value": 54.79}
+epoch 12/20
+{"metric": "plane6_val_accuracy", "value": 55.25}
+epoch 13/20
+{"metric": "plane6_val_accuracy", "value": 55.41}
+epoch 14/20
+{"metric": "plane6_val_accuracy", "value": 55.16}
+epoch 15/20
+{"metric": "plane6_val_accuracy", "value": 55.01}
+epoch 16/20
+{"metric": "plane6_val_accuracy", "value": 55.2}
+epoch 17/20
+{"metric": "plane6_val_accuracy", "value": 55.24}
+epoch 18/20
+{"metric": "plane6_val_accuracy", "value": 55.31}
+epoch 19/20
+{"metric": "plane6_val_accuracy", "value": 55.23}
+[2025-05-31 13:52:51] INFO (nni/MainThread) Final result: 55.41

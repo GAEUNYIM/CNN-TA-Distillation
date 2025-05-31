@@ -1,0 +1,42 @@
+---------- Training Student -------
+epoch 0/20
+{"metric": "plane8_val_accuracy", "value": 14.94}
+epoch 1/20
+{"metric": "plane8_val_accuracy", "value": 31.66}
+epoch 2/20
+{"metric": "plane8_val_accuracy", "value": 36.37}
+epoch 3/20
+{"metric": "plane8_val_accuracy", "value": 39.61}
+epoch 4/20
+{"metric": "plane8_val_accuracy", "value": 46.38}
+epoch 5/20
+{"metric": "plane8_val_accuracy", "value": 46.3}
+epoch 6/20
+{"metric": "plane8_val_accuracy", "value": 44.27}
+epoch 7/20
+{"metric": "plane8_val_accuracy", "value": 47.27}
+epoch 8/20
+{"metric": "plane8_val_accuracy", "value": 47.8}
+epoch 9/20
+{"metric": "plane8_val_accuracy", "value": 47.97}
+epoch 10/20
+{"metric": "plane8_val_accuracy", "value": 49.59}
+epoch 11/20
+{"metric": "plane8_val_accuracy", "value": 49.15}
+epoch 12/20
+{"metric": "plane8_val_accuracy", "value": 49.8}
+epoch 13/20
+{"metric": "plane8_val_accuracy", "value": 48.11}
+epoch 14/20
+{"metric": "plane8_val_accuracy", "value": 50.54}
+epoch 15/20
+{"metric": "plane8_val_accuracy", "value": 50.8}
+epoch 16/20
+{"metric": "plane8_val_accuracy", "value": 52.75}
+epoch 17/20
+{"metric": "plane8_val_accuracy", "value": 54.09}
+epoch 18/20
+{"metric": "plane8_val_accuracy", "value": 54.88}
+epoch 19/20
+{"metric": "plane8_val_accuracy", "value": 55.02}
+[2025-05-31 13:49:38] INFO (nni/MainThread) Final result: 55.02

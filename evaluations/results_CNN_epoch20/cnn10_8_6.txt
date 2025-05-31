@@ -1,0 +1,45 @@
+---------- Loading Teacher -------
+---------- Training Student -------
+/home/gaeunyim/GAEUN/lib/python3.10/site-packages/torch/nn/functional.py:3384: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+epoch 0/20
+{"metric": "plane6_val_accuracy", "value": 35.09}
+epoch 1/20
+{"metric": "plane6_val_accuracy", "value": 39.64}
+epoch 2/20
+{"metric": "plane6_val_accuracy", "value": 45.76}
+epoch 3/20
+{"metric": "plane6_val_accuracy", "value": 48.17}
+epoch 4/20
+{"metric": "plane6_val_accuracy", "value": 48.01}
+epoch 5/20
+{"metric": "plane6_val_accuracy", "value": 49.7}
+epoch 6/20
+{"metric": "plane6_val_accuracy", "value": 51.28}
+epoch 7/20
+{"metric": "plane6_val_accuracy", "value": 50.15}
+epoch 8/20
+{"metric": "plane6_val_accuracy", "value": 51.45}
+epoch 9/20
+{"metric": "plane6_val_accuracy", "value": 52.5}
+epoch 10/20
+{"metric": "plane6_val_accuracy", "value": 52.45}
+epoch 11/20
+{"metric": "plane6_val_accuracy", "value": 54.4}
+epoch 12/20
+{"metric": "plane6_val_accuracy", "value": 54.59}
+epoch 13/20
+{"metric": "plane6_val_accuracy", "value": 54.62}
+epoch 14/20
+{"metric": "plane6_val_accuracy", "value": 55.5}
+epoch 15/20
+{"metric": "plane6_val_accuracy", "value": 55.77}
+epoch 16/20
+{"metric": "plane6_val_accuracy", "value": 55.81}
+epoch 17/20
+{"metric": "plane6_val_accuracy", "value": 55.97}
+epoch 18/20
+{"metric": "plane6_val_accuracy", "value": 55.9}
+epoch 19/20
+{"metric": "plane6_val_accuracy", "value": 56.16}
+[2025-05-31 13:08:56] INFO (nni/MainThread) Final result: 56.16
