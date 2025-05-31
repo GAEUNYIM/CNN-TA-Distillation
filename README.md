@@ -8,7 +8,7 @@ This project is an replication of TAKD (Teacher Assistant Knowledge Distillation
 ### Modification of the evaluations from the baseline paper
 Originally, TAKD mostly evaluated the performance of using TA model based on the `CNN model` for the distillation path. **In this project, I repliacted the process of choosing the best size of TA based on additional `ResNet` model, with CIFAR-100 dataset, which is addressed as a crucial issue by the authors.** The best size of TA can be found by evaliating all the possible distillation paths within the range of model sizes between teacher model and student model. I followed the model sizes introduced in the paper, which are 110 for teacher model, and 8 for student model. Intermediate TAs are set with 56, 32, and 20 which are being reduced into around half size of the teacher models.
 
-## 1. Environment Setup
+## 1. Environmental Setup
 1. Connect to the server with GPUs.
 We will use [DRAC](https://alliancecan.ca/en/search?keywords=ssh) (Digital Alliance Canada Cluster) to run this experiment. Create your account, and connect to server with ssh to use GPU by following the instruction of the website.
 2. Create your own virtual environment in the server.
@@ -26,21 +26,19 @@ for example,
 ```
 srun -c 4 --gres=gpu:v100l:1 --mem=16GB --pty --time=3:00:00 bash
 ```
-
-## 2. Replication of TAKD 
-1. Clone this repository in your own path.
+4. Clone this repository in your own path.
 ```
 git clone https://github.com/GAEUNYIM/CNN-TA-Distillation.git
 ```
-2. Download CIFAR dataset from the google drive [link](https://drive.google.com/drive/folders/1mUncKdoadQGLvQopjCbAc8byEWtvlx2t?usp=sharing).
-3. Copy CIFAR dataset into the `data` directory in your repository.
+5. Download CIFAR dataset from the google drive [link](https://drive.google.com/drive/folders/1mUncKdoadQGLvQopjCbAc8byEWtvlx2t?usp=sharing).
+6. Copy CIFAR dataset into the `data` directory in your repository.
 ```
 cd CNN-TA-Distillation
 mkdir data
 cp cifar-100-python/ data
 ```
 
-## 3. Train and Evaluate the Model
+## 2. Train and Evaluate the Model
 1. First step is to train the biggest Teacher model from the CIFAR dataset with the following command. At this step, the original teacher model will be a student model of the ResNet.
 ```
 python3 train.py --epochs {NUM_EPOCHS} --student resnet{S_SIZE} --cuda {NUM_GPUS} --dataset cifar100
@@ -79,7 +77,7 @@ python3 train.py --epochs {NUM_EPOCHS} --teacher resnet{T_SIZE} --teacher-checkp
 - The other candidates of the student models were `8`, `6`, `4`, and `2`. 
 - Since we have 4 possible sizes of student model, there should be 2 to the power of 4 (=16) experiments to test all the cases.
 
-## 4. Results 
+## 3. Results 
 Here are the results table contains the model accuracy for all possible distillation paths. 
 1. (Plain CNN) Results from the original paper.
 ![alt text](results_original_paper.png)
@@ -91,4 +89,4 @@ Distillation paths for plainCNN on CIFAR-100 with T=10
 Distillation paths for ResNet on CIFAR-100 with T=110
 
 
-## 5. Analysis
+## 4. Analysis
