@@ -1,0 +1,16 @@
+authorName: Anonymous
+experimentName: TAKD
+trialConcurrency: 1
+maxExecDuration: 48h
+maxTrialNum: 1
+trainingServicePlatform: local # [local, remote, pai]
+searchSpacePath: hyperparemeters.json
+useAnnotation: false # [true, false]
+tuner:
+  builtinTunerName: TPE # [TPE, Random, Anneal, Evolution, BatchTuner]
+  classArgs:
+    optimize_mode: maximize # [maximize, minimize]
+trial:
+  command: python3 train.py --epochs 100 --teacher resnet110 --student resnet8 --cuda 1
+  codeDir: ./results_checkpoints
+  gpuNum: 1
