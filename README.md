@@ -97,7 +97,7 @@ Here are the results table contains the model accuracy for all possible distilla
 ![alt text](images/results_CNN_replication.JPG)
 
 3. (ResNet) of the replication with different parameters of the original paper.
-![alt text](images/results_ResNet_replication.JPG)
+![alt text](images/results_RESNET_replication.JPG)
 
 
 ## 4. Analysis
@@ -107,7 +107,9 @@ Here are the results table contains the model accuracy for all possible distilla
     - We can choose the best size of TA and the best distillation paths through the graphs.
 - By comparing the results from 3.2 and 3.3, our replication of showing distillation path for `ResNet` also worked almost likely to `CNN`.
     - The best distillation path was `110->56->8` for the smallest student model `8` with `ResNet`.
-    - The most suspicious result was, student as `32` showed better accuracy than the student as `56` despite of its smaller network size.
+    - Most of the student models distilled through TA showed worse accuracies than the one which is directly distilled from the teacher.
+    - One suspicious result was, student as `32` showed better accuracy than the student as `56` despite of its smaller network size.
+    - It supposed to be critical for the ResNet using lots of TAs for the performace of the model, due to the distillation loss.
     - This could be casued by not enough experimental trial issue, or something not yet proven.
 
 ## 5. Discussion
