@@ -9,13 +9,9 @@ import torch.nn.functional as F
 from models.DataLoader import load_CIFAR
 from models.StudentModel import check_model, create_student_model
 
-
-def str2bool(v):
-	if v.lower() in ('yes', 'true', 't', 'y', '1'):
-		return True
-	else:
-		return False
-	
+def avialable_CUDA(s):
+	if s == '1': return True
+	else: return False
 	
 def parse_arguments():
 	parser = argparse.ArgumentParser(description='TA Knowledge Distillation Code')
@@ -28,7 +24,7 @@ def parse_arguments():
 	parser.add_argument('--teacher', default='', type=str, help='teacher student name')
 	parser.add_argument('--student', '--model', default='resnet8', type=str, help='teacher student name')
 	parser.add_argument('--teacher-checkpoint', default='', type=str, help='optinal pretrained checkpoint for teacher')
-	parser.add_argument('--cuda', default=False, type=str2bool, help='whether or not use cuda(train on GPU)')
+	parser.add_argument('--cuda', default=False, type=avialable_CUDA, help='whether or not use cuda(train on GPU)')
 	parser.add_argument('--dataset-dir', default='./data', type=str,  help='dataset directory')
 	args = parser.parse_args()
 	return args
