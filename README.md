@@ -93,10 +93,10 @@ Here are the results table contains the model accuracy for all possible distilla
 1. (CNN) Results from the original paper.
 ![alt text](results_CNN_original_paper.png)
 
-2. (CNN) Results from the replication with same condition.
+2. (CNN) Results of the replication with same condition of the original paper.
 ![alt text](results_CNN_replication.JPG)
 
-3. (ResNet) Results from the replication with different hyperparameters condition.
+3. (ResNet) of the replication with different parameters of the original paper.
 ![alt text](results_ResNet_replication.JPG)
 
 
