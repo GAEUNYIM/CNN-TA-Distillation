@@ -6,8 +6,8 @@ import argparse
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
-from DataLoader import load_CIFAR
-from StudentModel import check_model, create_student_model
+from models.DataLoader import load_CIFAR
+from models.StudentModel import check_model, create_student_model
 
 
 def str2bool(v):
