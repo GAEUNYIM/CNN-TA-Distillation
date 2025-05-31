@@ -1,0 +1,45 @@
+---------- Loading Teacher -------
+---------- Training Student -------
+/home/gaeunyim/GAEUN/lib/python3.10/site-packages/torch/nn/functional.py:3384: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+epoch 0/20
+{"metric": "resnet20_val_accuracy", "value": 8.26}
+epoch 1/20
+{"metric": "resnet20_val_accuracy", "value": 12.75}
+epoch 2/20
+{"metric": "resnet20_val_accuracy", "value": 13.47}
+epoch 3/20
+{"metric": "resnet20_val_accuracy", "value": 17.33}
+epoch 4/20
+{"metric": "resnet20_val_accuracy", "value": 19.18}
+epoch 5/20
+{"metric": "resnet20_val_accuracy", "value": 20.93}
+epoch 6/20
+{"metric": "resnet20_val_accuracy", "value": 25.42}
+epoch 7/20
+{"metric": "resnet20_val_accuracy", "value": 27.72}
+epoch 8/20
+{"metric": "resnet20_val_accuracy", "value": 29.26}
+epoch 9/20
+{"metric": "resnet20_val_accuracy", "value": 31.26}
+epoch 10/20
+{"metric": "resnet20_val_accuracy", "value": 29.66}
+epoch 11/20
+{"metric": "resnet20_val_accuracy", "value": 33.97}
+epoch 12/20
+{"metric": "resnet20_val_accuracy", "value": 32.87}
+epoch 13/20
+{"metric": "resnet20_val_accuracy", "value": 36.27}
+epoch 14/20
+{"metric": "resnet20_val_accuracy", "value": 37.69}
+epoch 15/20
+{"metric": "resnet20_val_accuracy", "value": 41.54}
+epoch 16/20
+{"metric": "resnet20_val_accuracy", "value": 42.05}
+epoch 17/20
+{"metric": "resnet20_val_accuracy", "value": 42.17}
+epoch 18/20
+{"metric": "resnet20_val_accuracy", "value": 41.63}
+epoch 19/20
+{"metric": "resnet20_val_accuracy", "value": 41.73}
+[2025-05-30 18:02:36] INFO (nni/MainThread) Final result: 42.17

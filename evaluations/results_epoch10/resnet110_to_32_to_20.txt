@@ -1,0 +1,25 @@
+---------- Loading Teacher -------
+---------- Training Student -------
+/home/gaeunyim/GAEUN/lib/python3.10/site-packages/torch/nn/functional.py:3384: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+epoch 0/10
+{"metric": "resnet20_val_accuracy", "value": 8.3}
+epoch 1/10
+{"metric": "resnet20_val_accuracy", "value": 11.51}
+epoch 2/10
+{"metric": "resnet20_val_accuracy", "value": 15.24}
+epoch 3/10
+{"metric": "resnet20_val_accuracy", "value": 16.48}
+epoch 4/10
+{"metric": "resnet20_val_accuracy", "value": 20.38}
+epoch 5/10
+{"metric": "resnet20_val_accuracy", "value": 22.1}
+epoch 6/10
+{"metric": "resnet20_val_accuracy", "value": 25.36}
+epoch 7/10
+{"metric": "resnet20_val_accuracy", "value": 28.57}
+epoch 8/10
+{"metric": "resnet20_val_accuracy", "value": 28.9}
+epoch 9/10
+{"metric": "resnet20_val_accuracy", "value": 29.16}
+[2025-05-30 13:11:20] INFO (nni/MainThread) Final result: 29.16
