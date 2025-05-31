@@ -12,5 +12,5 @@ tuner:
     optimize_mode: maximize # [maximize, minimize]
 trial:
   command: python3 train.py --epochs 100 --teacher resnet110 --student resnet8 --cuda 1
-  codeDir: ./results_checkpoints
+  codeDir: .
   gpuNum: 1

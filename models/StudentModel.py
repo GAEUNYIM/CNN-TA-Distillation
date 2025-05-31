@@ -1,5 +1,5 @@
-from ModelResNet import *
-from ModelCNN import *
+from models.ModelResNet import *
+from models.ModelCNN import *
 
 def check_model(name):
 	name = name.lower()
