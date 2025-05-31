@@ -74,19 +74,20 @@ python3 train.py --epochs {NUM_EPOCHS} --teacher resnet{T_SIZE} --teacher-checkp
     │
     └── resnet110_56_32_20_8.txt
 ```
-(Note) In this project, we did 16 experiment in total. 
-- The biggest size of the teacher model was `110`
-- The other candidates of the student models were `56`, `32`, `20`, and `8`. 
+(Note) In this project, I tried 16 experiments in total for the each `Plain CNN`, and `ResNet` set. Why 16 experiments are needed for each set? Here are the reasons.
+- The biggest size of the teacher model was `10`
+- The other candidates of the student models were `8`, `6`, `4`, and `2`. 
 - Since we have 4 possible sizes of student model, there should be 2 to the power of 4 (=16) experiments to test all the cases.
 
-## 4. Results
-1. Results from the original paper 
+## 4. Results 
+Here are the results table contains the model accuracy for all possible distillation paths. 
+1. (Plain CNN) Results from the original paper.
 ![alt text](results_original_paper.png)
 
-2. Results from the replication with same condition
+2. (Plain CNN) Results from the replication with same condition.
 Distillation paths for plainCNN on CIFAR-100 with T=10
 
-3. Results from the replication with different hyperparameters condition
+3. (ResNet) Results from the replication with different hyperparameters condition.
 Distillation paths for ResNet on CIFAR-100 with T=110
 
 
