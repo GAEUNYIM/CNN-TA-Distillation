@@ -3,10 +3,10 @@
 
 ## 0. Project Overview
 ### Brief introduction of the baseline paper
-This project is an replication of TAKD (Teacher Assistant Knowledge Distillation) framework. One of the most critical challenges in knowledge distillation from a teacher model to a student model is performance degradation due to the limited number of parameters in the student model. To address this, the TAKD approach introduces to use intermediate Teacher Assistant (TA) model, which has fewer parameters than the teacher but more than the student. By using the TA model as a bridge, TAKD performs multi-stage distillation, which helps transfer knowledge more effectively and mitigates the capacity gap between teacher and student models.
+This project is an replication of [TAKD](https://arxiv.org/pdf/1902.03393) (Teacher Assistant Knowledge Distillation) framework. One of the most critical challenges in knowledge distillation from a teacher model to a student model is performance degradation due to the limited number of parameters in the student model. To address this, the TAKD approach introduces to use intermediate Teacher Assistant (TA) model, which has fewer parameters than the teacher but more than the student. By using the TA model as a bridge, TAKD performs multi-stage distillation, which helps transfer knowledge more effectively and mitigates the capacity gap between teacher and student models.
 
 ### Modification of the evaluations from the baseline paper
-Originally, TAKD mostly evaluated the performance of using TA model based on the `CNN model` for the distillation path. **(Important) In this project, I repliacted the process of distilling knowledges not only `CNN model`, but additionally `ResNet` model, with CIFAR-100 dataset to choose the best size of TA, which is addressed as a crucial issue by the authors.** The best size of TA can be found by evaliating all the possible distillation paths within the range of model sizes between teacher model and student model. I followed the model sizes introduced in the paper, which are 110 for teacher model, and 8 for student model. Intermediate TAs are set with 56, 32, and 20 which are being reduced into around half size of the teacher models.
+Originally, TAKD mostly evaluated the performance of using TA model based on the `CNN` model for the distillation path. **(Important) In this project, I repliacted the process of distilling knowledges not only `CNN` model, but additionally `ResNet` model, with CIFAR-100 dataset to choose the best size of TA, which is addressed as a crucial issue by the authors.** The best size of TA can be found by evaliating all the possible distillation paths within the range of model sizes between teacher model and student model. I followed the model sizes introduced in the paper, which are 110 for teacher model, and 8 for student model. Intermediate TAs are set with 56, 32, and 20 which are being reduced into around half size of the teacher models.
 
 ## 1. Environmental Setup
 1. Connect to the server with GPUs.
@@ -101,4 +101,15 @@ Here are the results table contains the model accuracy for all possible distilla
 
 
 ## 4. Analysis
-- 
+- By comparing the results from 3.1 and 3.2, our replication of the original paper TAKD showed almost simillar results.
+    - In 3.1, the distillation path `10->6->4->2` showed the best results for the smallest student model `2`.
+    - In 3.2, the distillation path `10->6->4->2` showed the best results for the smallest student model `2`, too.
+    - We can choose the best size of TA and the best distillation paths through the graphs.
+- By comparing the results from 3.2 and 3.3, our replication of showing distillation path for `ResNet` also worked almost likely to `CNN`.
+    - The best distillation path was `110->56->8` for the smallest student model `8` with `ResNet`.
+    - The most suspicious result was, student as `32` showed better accuracy than the student as `56` despite of its smaller network size.
+    - This could be casued by not enough experimental trial issue, or something not yet proven.
+
+## 5. Discussion
+- We replicated the process of choosing best TA size of TAKD, by confirming the evaluation results from the original paper not only `CNN`, but also `ResNet`. 
+- It would be better to repeat the experiments multipel times to get more accurate results. Due to the limited time, we only tried the whole experiments once. 
