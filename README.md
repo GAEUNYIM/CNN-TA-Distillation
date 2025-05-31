@@ -91,13 +91,13 @@ python3 train.py --epochs 20 --teacher plain10 --teacher-checkpoint ./cnn10.pth.
 ## 3. Results 
 Here are the results table contains the model accuracy for all possible distillation paths. 
 1. (CNN) Results from the original paper.
-![alt text](results_original_paper.png)
+![alt text](images/results_CNN_original_paper.png)
 
 2. (CNN) Results from the replication with same condition.
-Distillation paths for CNN on CIFAR-100 with T=10
+![alt text](images/results_CNN_replication.JPG)
 
 3. (ResNet) Results from the replication with different hyperparameters condition.
-Distillation paths for ResNet on CIFAR-100 with T=110
+![alt text](images/results_ResNet_replication.JPG)
 
 
 ## 4. Analysis
