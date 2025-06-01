@@ -114,4 +114,6 @@ Here are the results table contains the model accuracy for all possible distilla
 
 ## 5. Discussion
 - We replicated the process of choosing best TA size of TAKD, by confirming the evaluation results from the original paper not only `CNN`, but also `ResNet`. 
-- It would be better to repeat the experiments multipel times to get more accurate results. Due to the limited time, we only tried the whole experiments once. 
+- Distilling knowledge with TA to reduce the gap between teacher and student model supports to improve the accuracy of student model rather than directly distill knowledge from the teacher model without TA.
+- Finding the best distillation path among all the possible candidates takes lots of time and attempts, because it will depends on the task, model selection, dataset, and the sizes of the original teacher, final student, and intermediate TA models.
+- It would be better to repeat the experiments multiple times to get more accurate results. Due to the limited time, we only tried the whole experiments once. 
